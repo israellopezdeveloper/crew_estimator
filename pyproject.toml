@@ -1,0 +1,51 @@
+[project]
+name = "crew-estimator"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "israellopezdeveloper",email = "israel.lopez.developer@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+license = { text = "MIT" }
+
+[tool.poetry]
+packages = [{include = "crew_estimator", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=8.4.2,<9.0.0)",
+    "hypothesis (>=6.140.2,<7.0.0)",
+    "mypy (>=1.18.2,<2.0.0)",
+    "ruff (>=0.13.2,<0.14.0)",
+    "black (>=25.9.0,<26.0.0)",
+    "pytest-cov (>=7.0.0,<8.0.0)",
+    "pre-commit (>=4.3.0,<5.0.0)"
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+skip-string-normalization = false
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+lint.select = ["E", "F", "W", "C90", "I", "B", "UP"]
+lint.ignore = []
+fix = true
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+ignore_missing_imports = true
+show_error_codes = true
+

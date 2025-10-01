@@ -1,0 +1,44 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ---- Virtualenvs / Poetry ----
+.venv/
+.env
+.env.*
+poetry.lock
+
+# ---- Build / Distribution ----
+build/
+dist/
+
+# ---- Testing ----
+.coverage
+.coverage.*
+htmlcov/
+.cache/
+pytest_cache/
+hypothesis/
+
+# ---- Type checking / Linters ----
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pyre/
+
+# ---- IDE / Editors ----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- OS generated ----
+.DS_Store
+Thumbs.db
+
+# ---- Reports ----
+coverage.xml
+*.log
+

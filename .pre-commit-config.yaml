@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: make-qa
+        name: Run make qa
+        entry: make qa
+        language: system
+        pass_filenames: false
+

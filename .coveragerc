@@ -1,0 +1,9 @@
+[run]
+branch = True
+source = src/crew_estimator
+
+[report]
+omit =
+    */__init__.py
+    */tests/*
+
